@@ -1,9 +1,73 @@
+/* 
+	Основной цвет текста - #161515;
+	черный цвет - #272727;
+	акцентный - #BB8B5D;
 
-
-
-
+	белый цвет : #FFFFFF;
+ */
+ * {
+	box-sizing: border-box;
+ }
+:root {
+	--primary-text-color: #161515;
+	--primary-black-color: #272727;
+	--primary-white-color: #ffffff;
+	--accent-color: #BB8B5D;
+}
 
 body {
+	color: var(--primary-black-color);
+	background-color: var(--primary-white-color);
+
 	font-family: 'League Spartan', sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+/* общий стиль заголовков */
+.title {
+	font-weight: inherit;
+	font-size: 24px;
+	line-height: 1.86;
+}
+
+/* HEADER */
+.header-title {
+	
+}
+
+.header-subtitle {
+	color: var(--primary-black-color);
+
+	font-size: 250px;
+	line-height: 0.92;
+}
+
+.header-descr {
+	line-height: 1.55;
+}
+
+/* Header-button */
+.header-button {
+	color: var(--primary-white-color);
+	background-color: var(--primary-text-color);
+
+	line-height: 0.9;
+}
+
+.header-button-price {
+	color: var(--primary-black-color);
+	background-color: var(--primary-white-color);
+
+	line-height: 1.86;
 }
 
