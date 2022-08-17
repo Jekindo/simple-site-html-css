@@ -12,6 +12,7 @@
 	--primary-text-color: #161515;
 	--primary-black-color: #272727;
 	--primary-white-color: #ffffff;
+	--secondary-white-color: #F8F8F8;
 	--accent-color: #BB8B5D;
 }
 
@@ -41,6 +42,10 @@ body {
 }
 
 /* HEADER */
+.header {
+	background-color: var(--secondary-white-color);
+}
+
 .header-title {
 	
 }
@@ -71,3 +76,54 @@ body {
 	line-height: 1.86;
 }
 
+/* POPULAR MODELS */
+.models-title {
+	text-align: center;
+}
+
+.models-subtitle {
+	color: var(--primary-black-color);
+
+	font-weight: 400;
+	font-size: 72px;
+	line-height: 1.13;
+	text-align: center;
+}
+
+.models-list-item {
+	
+}
+.models-list-title{
+	color: var(--primary-black-color);
+
+	font-size: inherit;
+	font-weight: 400;
+	line-height: 0.9;
+	text-align: center;
+}
+
+.models-list-descr {
+	line-height: 1.55;
+	text-align: center;
+}
+
+/* Product description */
+.description-title {
+	color: var();
+
+	font-weight: 400;
+	font-size: inherit;
+	line-height: 1.86;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.description-text {
+	font-size: 24px;
+	line-height: 1.7;
+	text-align: center;
+}
+
+.description-text-link {
+	color: var(--accent-color);
+}
