@@ -55,7 +55,7 @@ body {
 
 /* Container for section */
 .section-container {
-	max-width: 515px;
+	max-width: 535px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -74,8 +74,8 @@ body {
 	justify-content: space-between;
 
 	max-width: 1170px;
-	padding: 0 5px;
-	margin: 0 240px 0 133px;
+	padding: 0 10px;
+	margin: 0 auto;
 
 	/* max-width: 1440px;
 	padding: 0 240px 168px 133px; */
@@ -149,10 +149,12 @@ body {
 
 /* Список моделей */
 .models-list {
+	margin-bottom: 59px;
 }
 
 .models-list-item {
 	max-width: 510px;
+	margin: 0 auto;
 }
 
 .models-list-item:not(:last-child) {
@@ -164,6 +166,7 @@ body {
 
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	max-width: 500px;
 	margin-bottom: 67px;
 }
@@ -185,6 +188,9 @@ body {
 }
 
 /* Product description */
+.description {
+	margin-bottom: 140px;
+}
 .description-title {
 	color: var();
 
@@ -193,6 +199,8 @@ body {
 	line-height: 1.86;
 	text-align: center;
 	text-transform: capitalize;
+
+	margin-bottom: 58px;
 }
 
 .description-text {
