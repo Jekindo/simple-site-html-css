@@ -5,8 +5,19 @@
 
 	белый цвет : #FFFFFF;
  */
- * {
-	box-sizing: border-box;
+ p {
+	 margin: 0;
+	 padding: 0;
+ }
+
+ h1,h2,h3,h4,h5,h6 {
+	 margin: 0;
+	 padding: 0; 
+ }
+
+ ul {
+	 margin: 0;
+	 padding: 0;
  }
 :root {
 	--primary-text-color: #161515;
@@ -41,13 +52,42 @@ body {
 	line-height: 1.86;
 }
 
+
+/* Container for section */
+.section-container {
+	max-width: 515px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 /* HEADER */
 .header {
 	background-color: var(--secondary-white-color);
+
+	padding-bottom: 168px;
+	margin-bottom: 43px;
+}
+
+/* Обертка для header */
+.header-container {
+	display: flex;
+	justify-content: space-between;
+
+	max-width: 1170px;
+	padding: 0 5px;
+	margin: 0 240px 0 133px;
+
+	/* max-width: 1440px;
+	padding: 0 240px 168px 133px; */
+}
+
+.header-info {
+	max-width: 575px;
+	padding-top: 104px;
 }
 
 .header-title {
-	
+	margin-bottom: 53px;
 }
 
 .header-subtitle {
@@ -55,26 +95,41 @@ body {
 
 	font-size: 250px;
 	line-height: 0.92;
+
+	margin-bottom: 43px;
 }
 
 .header-descr {
 	line-height: 1.55;
+
+	margin-bottom: 61px;
 }
 
 /* Header-button */
+.header-button-wrapper {
+	display: flex;
+}
 .header-button {
 	color: var(--primary-white-color);
 	background-color: var(--primary-text-color);
 
 	line-height: 0.9;
+
+	display: inline-block;
+	padding: 26px 73px 31px
 }
 
 .header-button-price {
 	color: var(--primary-black-color);
 	background-color: var(--primary-white-color);
 
-	line-height: 1.86;
+	line-height: 0.9;
+
+	display: inline-block;
+	padding: 26px 27px 31px;
 }
+
+/* HEADER IMAGE */
 
 /* POPULAR MODELS */
 .models-title {
@@ -88,11 +143,31 @@ body {
 	font-size: 72px;
 	line-height: 1.13;
 	text-align: center;
+
+	margin-bottom: 83px;
+}
+
+/* Список моделей */
+.models-list {
 }
 
 .models-list-item {
-	
+	max-width: 510px;
 }
+
+.models-list-item:not(:last-child) {
+	margin-bottom: 85px;
+}
+
+.models-img-wrapper {
+	background-color: var(--secondary-white-color);
+
+	display: flex;
+	justify-content: center;
+	max-width: 500px;
+	margin-bottom: 67px;
+}
+
 .models-list-title{
 	color: var(--primary-black-color);
 
@@ -100,6 +175,8 @@ body {
 	font-weight: 400;
 	line-height: 0.9;
 	text-align: center;
+
+	margin-bottom: 17px;
 }
 
 .models-list-descr {
