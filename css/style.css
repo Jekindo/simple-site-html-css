@@ -209,6 +209,10 @@ body {
 	text-align: center;
 }
 
+/* LiNK-DESCRIPTION */
 .description-text-link {
 	color: var(--accent-color);
+}
+.description-text-link:hover {
+	text-decoration: underline;
 }
